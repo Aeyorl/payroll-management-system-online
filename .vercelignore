@@ -1,0 +1,6 @@
+.git
+_tools/
+*.log
+.DS_Store
+Thumbs.db
+ChatGPT Image*
