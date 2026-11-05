@@ -1477,3 +1477,61 @@ p {
   }
 }
 
+
+
+/* Email Icon Buttons (Embedded in mail logo) */
+.top-bar-email-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  color: var(--primary);
+  background-color: var(--primary-light);
+  transition: var(--transition);
+}
+
+.top-bar-email-btn:hover {
+  background-color: var(--primary);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.contact-email-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--primary-light);
+  color: var(--primary);
+  transition: var(--transition);
+}
+
+.contact-email-btn:hover {
+  background-color: var(--primary);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.drawer-email-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--primary-light);
+  color: var(--primary);
+  border: 1.5px solid var(--primary);
+  transition: var(--transition);
+}
+
+.drawer-email-btn:hover {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+

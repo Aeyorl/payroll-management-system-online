@@ -31,11 +31,10 @@
 
   <!-- Site Header -->
   <header class="site-header">
-    <div class="top-bar">
+        <div class="top-bar">
       <div class="container top-bar-content">
-        <a href="mailto:pmsoinc@mail2usa.com" class="top-bar-email" style="display: inline-flex; align-items: center; gap: 0.4rem; color: var(--primary); font-weight: 600;">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-          pmsoinc@mail2usa.com
+        <a href="mailto:pmsoinc@mail2usa.com" class="top-bar-email-btn" title="Email PMSO Inc." aria-label="Email PMSO Inc.">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
         </a>
       </div>
     </div>
@@ -103,10 +102,11 @@
     </ul>
     <div class="mobile-drawer-footer">
       <a href="contact-us.html" class="nav-cta-btn" style="width: 100%; justify-content: center;">Contact Us</a>
-      <a href="mailto:pmsoinc@mail2usa.com" class="nav-cta-btn" style="width: 100%; justify-content: center; margin-top: 0.65rem; background-color: #ffffff; color: var(--primary) !important; border: 1.5px solid var(--primary);">
-        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-        pmsoinc@mail2usa.com
-      </a>
+      <div style="display: flex; justify-content: center; margin-top: 0.75rem;">
+        <a href="mailto:pmsoinc@mail2usa.com" class="drawer-email-btn" title="Email PMSO Inc." aria-label="Email PMSO Inc.">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+      </div>
     </div>
   </div>
   <div class="drawer-backdrop" id="drawerBackdrop"></div>
@@ -136,25 +136,25 @@
               <strong>Thank you!</strong> Your message has been sent to Payroll Management System Online. A representative will get back to you shortly.
             </div>
 
-            <form id="contactForm">
+            <form id="contactForm" action="mailto:pmsoinc@mail2usa.com" method="POST" enctype="text/plain">
               <div class="contact-form-group">
                 <label for="contactName" class="contact-label">Name*</label>
-                <input type="text" id="contactName" class="contact-input" required placeholder="Your full name" />
+                <input type="text" id="contactName" name="Name" class="contact-input" required placeholder="Your full name" />
               </div>
 
               <div class="contact-form-group">
                 <label for="contactEmail" class="contact-label">Email*</label>
-                <input type="email" id="contactEmail" class="contact-input" required placeholder="your.email@example.com" />
+                <input type="email" id="contactEmail" name="Email" class="contact-input" required placeholder="your.email@example.com" />
               </div>
 
               <div class="contact-form-group">
                 <label for="contactPhone" class="contact-label">Phone</label>
-                <input type="tel" id="contactPhone" class="contact-input" placeholder="Your phone number (optional)" />
+                <input type="tel" id="contactPhone" name="Phone" class="contact-input" placeholder="Your phone number (optional)" />
               </div>
 
               <div class="contact-form-group">
                 <label for="contactMessage" class="contact-label">Message</label>
-                <textarea id="contactMessage" class="contact-textarea" placeholder="How can Payroll Management System Online assist you?"></textarea>
+                <textarea id="contactMessage" name="Message" class="contact-textarea" placeholder="How can Payroll Management System Online assist you?"></textarea>
               </div>
 
               <button type="submit" class="contact-submit-btn">Send</button>
@@ -211,10 +211,11 @@
 
             <h4 style="font-size: 1.25rem; color: var(--text-dark); margin-top: 2rem; margin-bottom: 0.5rem; border-bottom: 2px solid var(--primary-light); padding-bottom: 0.4rem;">Payroll Management System Online</h4>
 
-            <div class="contact-info-list">
-              <div class="contact-info-item">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-                <a href="mailto:pmsoinc@mail2usa.com" style="color: var(--primary); font-weight: 600;">pmsoinc@mail2usa.com</a>
+                        <div class="contact-info-list">
+              <div class="contact-info-item" style="display: flex; align-items: center; gap: 0.75rem;">
+                <a href="mailto:pmsoinc@mail2usa.com" class="contact-email-btn" title="Email PMSO Inc." aria-label="Email PMSO Inc.">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                </a>
               </div>
             </div>
           </div>

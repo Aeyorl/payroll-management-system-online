@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 5. Contact Form Submission
+  // 5. Contact Form Submission - Direct delivery to pmsoinc@mail2usa.com
   const contactForm = document.getElementById('contactForm');
   const contactSuccess = document.getElementById('contactSuccess');
 
@@ -114,14 +114,15 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       const name = document.getElementById('contactName')?.value.trim();
       const email = document.getElementById('contactEmail')?.value.trim();
-      const phone = document.getElementById('contactPhone')?.value.trim();
-      const message = document.getElementById('contactMessage')?.value.trim();
+      const phone = document.getElementById('contactPhone')?.value.trim() || 'Not provided';
+      const message = document.getElementById('contactMessage')?.value.trim() || '(No message content)';
 
       if (!name || !email) {
         alert('Please provide your name and a valid email address.');
         return;
       }
 
+      // 1. Save lead to localStorage backup
       try {
         const inquiries = JSON.parse(localStorage.getItem('payroll_management_inquiries') || '[]');
         inquiries.push({ name, email, phone, message, date: new Date().toISOString() });
@@ -130,12 +131,39 @@ document.addEventListener('DOMContentLoaded', () => {
         console.warn('Could not save inquiry to storage', err);
       }
 
+      // 2. Format mailto link addressed to pmsoinc@mail2usa.com
+      const subject = encodeURIComponent(`New Inquiry from ${name} - PMSO Inc.`);
+      const body = encodeURIComponent(
+        `Full Name: ${name}\n` +
+        `Email: ${email}\n` +
+        `Phone: ${phone}\n\n` +
+        `Message:\n${message}\n\n` +
+        `----------------------------------------\n` +
+        `Submitted via PMSO Inc. Website`
+      );
+
+      const mailtoUrl = `mailto:pmsoinc@mail2usa.com?subject=${subject}&body=${body}`;
+
+      // 3. Trigger email composer directly to pmsoinc@mail2usa.com
+      window.location.href = mailtoUrl;
+
+      // 4. Update UI confirmation
       contactForm.reset();
       if (contactSuccess) {
+        contactSuccess.innerHTML = `
+          <div style="font-size: 1.05rem; margin-bottom: 0.4rem; color: #1e6939;">
+            <strong>Thank you, ${name}!</strong> Your inquiry has been routed to our office email.
+          </div>
+          <p style="margin-bottom: 0.75rem; font-size: 0.95rem; color: #2e5739;">
+            If your email app did not open automatically, click the button below to send your message directly to us:
+          </p>
+          <a href="${mailtoUrl}" class="nav-cta-btn" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; padding: 0.55rem 1.15rem; font-size: 0.95rem;">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            Send Email Now
+          </a>
+        `;
         contactSuccess.style.display = 'block';
         contactSuccess.scrollIntoView({ behavior: 'smooth' });
-      } else {
-        alert('Thank you! Your message has been sent to Payroll Management System Online. We will contact you shortly.');
       }
     });
   }
