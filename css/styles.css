@@ -7,21 +7,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap');
 
 :root {
-  --primary: #0075c1;
-  --primary-hover: #005f9e;
-  --primary-dark: #004d80;
-  --primary-light: #e8f4fc;
-  --accent: #0098ff;
+  --primary: #0069C8;
+  --primary-hover: #084A9C;
+  --primary-dark: #084A9C;
+  --primary-light: #eaf3fb;
+  --accent: #0BA5F5;
+  --neutral-gray: #627181;
   --text-dark: #161616;
   --text-body: #333333;
-  --text-muted: #666666;
+  --text-muted: #627181;
   --text-light: #999999;
   --bg-page: #ffffff;
-  --bg-light: #f7f7f7;
+  --bg-light: #f7f9fc;
   --bg-dark: #161616;
   --bg-card: #ffffff;
-  --border-light: #e2e2e2;
-  --border-subtle: #eeeeee;
+  --border-light: #e1e7ec;
+  --border-subtle: #edf2f6;
   --font-heading: 'Titillium Web', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-body: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --shadow-sm: 0 2px 4px rgba(0,0,0,0.06);
@@ -220,28 +221,47 @@ p {
 }
 
 .nav-brand {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   text-decoration: none;
+  line-height: 1;
 }
 
-.nav-brand img {
-  height: 52px;
+.brand-logo-header {
+  height: 48px;
   width: auto;
+  max-width: 215px;
   object-fit: contain;
+  display: block;
+  transition: opacity 0.2s ease;
+}
+
+.nav-brand:hover .brand-logo-header {
+  opacity: 0.92;
 }
 
 .brand-name {
-  font-family: var(--font-heading);
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--primary);
-  margin-left: 0.65rem;
-  letter-spacing: -0.01em;
-  line-height: 1.2;
+  display: none;
+}
+
+.mobile-drawer-brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand-logo-drawer {
+  height: 40px;
+  width: auto;
+  max-width: 195px;
+  object-fit: contain;
+  display: block;
 }
 
 @media (max-width: 1200px) {
+  .brand-logo-header {
+    height: 44px;
+    max-width: 195px;
+  }
   .brand-name {
     font-size: 1.05rem;
   }
@@ -1390,6 +1410,10 @@ p {
 }
 
 @media (max-width: 820px) {
+  .brand-logo-header {
+    height: 40px;
+    max-width: 180px;
+  }
   .nav-menu,
   .top-bar {
     display: none;
