@@ -1,0 +1,782 @@
+{
+  "about-us": {
+    "title": "About us",
+    "description": "",
+    "images": [
+      {
+        "src": "//img1.wsimg.com/isteam/ip/9b51b977-97a1-49a9-b404-fac7e40d8ca8/logo/ba529452-2fa0-47fc-a285-c52c93598950.webp/:/rs=h:80,cg:true,m/qt=q:95",
+        "alt": "CrystalTax Inc"
+      },
+      {
+        "src": "//img1.wsimg.com/isteam/ip/9b51b977-97a1-49a9-b404-fac7e40d8ca8/logo/ba529452-2fa0-47fc-a285-c52c93598950.webp/:/rs=h:80,cg:true,m/qt=q:95",
+        "alt": "CrystalTax Inc"
+      },
+      {
+        "src": "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=",
+        "alt": ""
+      },
+      {
+        "src": "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=",
+        "alt": ""
+      }
+    ],
+    "links": [
+      {
+        "href": "/",
+        "text": ""
+      },
+      {
+        "href": "#",
+        "text": ""
+      },
+      {
+        "href": "/",
+        "text": ""
+      },
+      {
+        "href": "/",
+        "text": "Home"
+      },
+      {
+        "href": "/about-us",
+        "text": "About us"
+      },
+      {
+        "href": "/contact-us",
+        "text": "Contact Us"
+      },
+      {
+        "href": "/tax-services",
+        "text": "Tax Services"
+      },
+      {
+        "href": "/payroll-services",
+        "text": "Payroll Services"
+      },
+      {
+        "href": "#",
+        "text": "More"
+      },
+      {
+        "href": "/",
+        "text": "Home"
+      },
+      {
+        "href": "/about-us",
+        "text": "About us"
+      },
+      {
+        "href": "/contact-us",
+        "text": "Contact Us"
+      },
+      {
+        "href": "/tax-services",
+        "text": "Tax Services"
+      },
+      {
+        "href": "/payroll-services",
+        "text": "Payroll Services"
+      },
+      {
+        "href": "/",
+        "text": "Home"
+      },
+      {
+        "href": "/about-us",
+        "text": "About us"
+      },
+      {
+        "href": "/contact-us",
+        "text": "Contact Us"
+      },
+      {
+        "href": "/tax-services",
+        "text": "Tax Services"
+      },
+      {
+        "href": "/payroll-services",
+        "text": "Payroll Services"
+      },
+      {
+        "href": "https://www.facebook.com/1115563465180679",
+        "text": ""
+      },
+      {
+        "href": "https://www.instagram.com/crystal_tax",
+        "text": ""
+      },
+      {
+        "href": "https://www.pinterest.com/CrystalTaxInc/",
+        "text": ""
+      },
+      {
+        "href": "https://www.twitter.com/crystal_tax",
+        "text": ""
+      },
+      {
+        "href": "https://www.yelp.com/biz/cr6mEC5XWXgnN3oowKftsQ",
+        "text": ""
+      }
+    ]
+  },
+  "accounting-services": {
+    "title": "CrystalTax Inc - Accounting Services, Tax Preparation Services",
+    "description": "Accurate income tax preparation services and timely income tax filing is essential for any effective and efficient tax plan.",
+    "images": [
+      {
+        "src": "//img1.wsimg.com/isteam/ip/9b51b977-97a1-49a9-b404-fac7e40d8ca8/logo/ba529452-2fa0-47fc-a285-c52c93598950.webp/:/rs=h:80,cg:true,m/qt=q:95",
+        "alt": "CrystalTax Inc"
+      },
+      {
+        "src": "//img1.wsimg.com/isteam/ip/9b51b977-97a1-49a9-b404-fac7e40d8ca8/logo/ba529452-2fa0-47fc-a285-c52c93598950.webp/:/rs=h:80,cg:true,m/qt=q:95",
+        "alt": "CrystalTax Inc"
+      },
+      {
+        "src": "//img1.wsimg.com/isteam/stock/11255/:/rs=w:365,h:365,cg:true,m/cr=w:365,h:365",
+        "alt": "Accounting"
+      },
+      {
+        "src": "//img1.wsimg.com/isteam/stock/11559/:/rs=w:365,h:365,cg:true,m/cr=w:365,h:365",
+        "alt": "Accounting"
+      }
+    ],
+    "links": [
+      {
+        "href": "/",
+        "text": ""
+      },
+      {
+        "href": "#",
+        "text": ""
+      },
+      {
+        "href": "/",
+        "text": ""
+      },
+      {
+        "href": "/",
+        "text": "Home"
+      },
+      {
+        "href": "/about-us",
+        "text": "About us"
+      },
+      {
+        "href": "/contact-us",
+        "text": "Contact Us"
+      },
+      {
+        "href": "/tax-services",
+        "text": "Tax Services"
+      },
+      {
+        "href": "/payroll-services",
+        "text": "Payroll Services"
+      },
+      {
+        "href": "#",
+        "text": "More"
+      },
+      {
+        "href": "/",
+        "text": "Home"
+      },
+      {
+        "href": "/about-us",
+        "text": "About us"
+      },
+      {
+        "href": "/contact-us",
+        "text": "Contact Us"
+      },
+      {
+        "href": "/tax-services",
+        "text": "Tax Services"
+      },
+      {
+        "href": "/payroll-services",
+        "text": "Payroll Services"
+      },
+      {
+        "href": "/",
+        "text": "Home"
+      },
+      {
+        "href": "/about-us",
+        "text": "About us"
+      },
+      {
+        "href": "/contact-us",
+        "text": "Contact Us"
+      },
+      {
+        "href": "/tax-services",
+        "text": "Tax Services"
+      },
+      {
+        "href": "/payroll-services",
+        "text": "Payroll Services"
+      },
+      {
+        "href": "https://www.facebook.com/1115563465180679",
+        "text": ""
+      },
+      {
+        "href": "https://www.instagram.com/crystal_tax",
+        "text": ""
+      },
+      {
+        "href": "https://www.pinterest.com/CrystalTaxInc/",
+        "text": ""
+      },
+      {
+        "href": "https://www.twitter.com/crystal_tax",
+        "text": ""
+      },
+      {
+        "href": "https://www.yelp.com/biz/cr6mEC5XWXgnN3oowKftsQ",
+        "text": ""
+      }
+    ]
+  },
+  "contact-us": {
+    "title": "Tax Preparation Services - CrystalTax Inc",
+    "description": "Contact Us New York Staten Island Brooklyn",
+    "images": [
+      {
+        "src": "//img1.wsimg.com/isteam/ip/9b51b977-97a1-49a9-b404-fac7e40d8ca8/logo/ba529452-2fa0-47fc-a285-c52c93598950.webp/:/rs=h:80,cg:true,m/qt=q:95",
+        "alt": "CrystalTax Inc"
+      },
+      {
+        "src": "//img1.wsimg.com/isteam/ip/9b51b977-97a1-49a9-b404-fac7e40d8ca8/logo/ba529452-2fa0-47fc-a285-c52c93598950.webp/:/rs=h:80,cg:true,m/qt=q:95",
+        "alt": "CrystalTax Inc"
+      }
+    ],
+    "links": [
+      {
+        "href": "/",
+        "text": ""
+      },
+      {
+        "href": "#",
+        "text": ""
+      },
+      {
+        "href": "/",
+        "text": ""
+      },
+      {
+        "href": "/",
+        "text": "Home"
+      },
+      {
+        "href": "/about-us",
+        "text": "About us"
+      },
+      {
+        "href": "/contact-us",
+        "text": "Contact Us"
+      },
+      {
+        "href": "/tax-services",
+        "text": "Tax Services"
+      },
+      {
+        "href": "/payroll-services",
+        "text": "Payroll Services"
+      },
+      {
+        "href": "#",
+        "text": "More"
+      },
+      {
+        "href": "/",
+        "text": "Home"
+      },
+      {
+        "href": "/about-us",
+        "text": "About us"
+      },
+      {
+        "href": "/contact-us",
+        "text": "Contact Us"
+      },
+      {
+        "href": "/tax-services",
+        "text": "Tax Services"
+      },
+      {
+        "href": "/payroll-services",
+        "text": "Payroll Services"
+      },
+      {
+        "href": "/",
+        "text": "Home"
+      },
+      {
+        "href": "/about-us",
+        "text": "About us"
+      },
+      {
+        "href": "/contact-us",
+        "text": "Contact Us"
+      },
+      {
+        "href": "/tax-services",
+        "text": "Tax Services"
+      },
+      {
+        "href": "/payroll-services",
+        "text": "Payroll Services"
+      },
+      {
+        "href": "https://policies.google.com/privacy",
+        "text": "Privacy Policy"
+      },
+      {
+        "href": "https://policies.google.com/terms",
+        "text": "Terms of Service"
+      },
+      {
+        "href": "tel:7189219800",
+        "text": "(718)921-9800"
+      },
+      {
+        "href": "https://www.facebook.com/1115563465180679",
+        "text": ""
+      },
+      {
+        "href": "https://www.instagram.com/crystal_tax",
+        "text": ""
+      },
+      {
+        "href": "https://www.pinterest.com/CrystalTaxInc/",
+        "text": ""
+      },
+      {
+        "href": "https://www.twitter.com/crystal_tax",
+        "text": ""
+      },
+      {
+        "href": "https://www.yelp.com/biz/cr6mEC5XWXgnN3oowKftsQ",
+        "text": ""
+      }
+    ]
+  },
+  "index": {
+    "title": "CrystalTax Inc - Tax Preparation - New York, New York",
+    "description": "Accurate personal income tax preparation and timely income tax filing. We also prepare C corporation, S corporation and LLC/Partnership tax returns. ",
+    "images": [
+      {
+        "src": "//img1.wsimg.com/isteam/ip/9b51b977-97a1-49a9-b404-fac7e40d8ca8/logo/ba529452-2fa0-47fc-a285-c52c93598950.webp/:/rs=h:80,cg:true,m/qt=q:95",
+        "alt": "CrystalTax Inc"
+      },
+      {
+        "src": "//img1.wsimg.com/isteam/ip/9b51b977-97a1-49a9-b404-fac7e40d8ca8/logo/ba529452-2fa0-47fc-a285-c52c93598950.webp/:/rs=h:80,cg:true,m/qt=q:95",
+        "alt": "CrystalTax Inc"
+      },
+      {
+        "src": "//img1.wsimg.com/isteam/stock/11637/:/rs=w:365,h:365,cg:true,m/cr=w:365,h:365",
+        "alt": ""
+      },
+      {
+        "src": "//img1.wsimg.com/isteam/stock/8386/:/cr=t:0%25,l:16.67%25,w:66.67%25,h:100%25/rs=w:365,h:365,cg:true",
+        "alt": ""
+      },
+      {
+        "src": "//img1.wsimg.com/isteam/ip/9b51b977-97a1-49a9-b404-fac7e40d8ca8/index_main_BusinessTaxPrep.jpg/:/cr=t:0%25,l:0%25,w:66.43%25,h:100%25/rs=w:365,h:365,cg:true",
+        "alt": ""
+      },
+      {
+        "src": "//img1.wsimg.com/isteam/stock/DdbaNNm/:/rs=w:365,h:365,cg:true,m/cr=w:365,h:365",
+        "alt": ""
+      }
+    ],
+    "links": [
+      {
+        "href": "/",
+        "text": ""
+      },
+      {
+        "href": "#",
+        "text": ""
+      },
+      {
+        "href": "/",
+        "text": ""
+      },
+      {
+        "href": "/",
+        "text": "Home"
+      },
+      {
+        "href": "/about-us",
+        "text": "About us"
+      },
+      {
+        "href": "/contact-us",
+        "text": "Contact Us"
+      },
+      {
+        "href": "/tax-services",
+        "text": "Tax Services"
+      },
+      {
+        "href": "/payroll-services",
+        "text": "Payroll Services"
+      },
+      {
+        "href": "#",
+        "text": "More"
+      },
+      {
+        "href": "/",
+        "text": "Home"
+      },
+      {
+        "href": "/about-us",
+        "text": "About us"
+      },
+      {
+        "href": "/contact-us",
+        "text": "Contact Us"
+      },
+      {
+        "href": "/tax-services",
+        "text": "Tax Services"
+      },
+      {
+        "href": "/payroll-services",
+        "text": "Payroll Services"
+      },
+      {
+        "href": "/",
+        "text": "Home"
+      },
+      {
+        "href": "/about-us",
+        "text": "About us"
+      },
+      {
+        "href": "/contact-us",
+        "text": "Contact Us"
+      },
+      {
+        "href": "/tax-services",
+        "text": "Tax Services"
+      },
+      {
+        "href": "/payroll-services",
+        "text": "Payroll Services"
+      },
+      {
+        "href": "/contact-us",
+        "text": "Contact Us"
+      },
+      {
+        "href": "tel:7189219800",
+        "text": "(718) 921-9800"
+      },
+      {
+        "href": "/contact-us",
+        "text": "Contact Us"
+      },
+      {
+        "href": "tel:7189219800",
+        "text": "(718) 921-9800"
+      },
+      {
+        "href": "/accounting-services",
+        "text": ""
+      },
+      {
+        "href": "/tax-services#0bd2745b-6ffd-4473-a047-d4cfa33fc039",
+        "text": ""
+      },
+      {
+        "href": "/tax-services#bfd6478c-45f9-4094-bba7-ef52d77e800a",
+        "text": ""
+      },
+      {
+        "href": "/payroll-services",
+        "text": ""
+      },
+      {
+        "href": "https://www.facebook.com/1115563465180679",
+        "text": ""
+      },
+      {
+        "href": "https://www.instagram.com/crystal_tax",
+        "text": ""
+      },
+      {
+        "href": "https://www.pinterest.com/CrystalTaxInc/",
+        "text": ""
+      },
+      {
+        "href": "https://www.twitter.com/crystal_tax",
+        "text": ""
+      },
+      {
+        "href": "https://www.yelp.com/biz/cr6mEC5XWXgnN3oowKftsQ",
+        "text": ""
+      }
+    ]
+  },
+  "payroll-services": {
+    "title": "CrystalTax Inc - Payroll Tax, Payroll Processing",
+    "description": "If payroll is a major problem for you, then we are your solution.\nWhatever type of business you operate, whatever your payroll processing needs are.",
+    "images": [
+      {
+        "src": "//img1.wsimg.com/isteam/ip/9b51b977-97a1-49a9-b404-fac7e40d8ca8/logo/ba529452-2fa0-47fc-a285-c52c93598950.webp/:/rs=h:80,cg:true,m/qt=q:95",
+        "alt": "CrystalTax Inc"
+      },
+      {
+        "src": "//img1.wsimg.com/isteam/ip/9b51b977-97a1-49a9-b404-fac7e40d8ca8/logo/ba529452-2fa0-47fc-a285-c52c93598950.webp/:/rs=h:80,cg:true,m/qt=q:95",
+        "alt": "CrystalTax Inc"
+      },
+      {
+        "src": "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=",
+        "alt": "Payroll Tax, Payroll Processing, 940, 941, NYS45"
+      },
+      {
+        "src": "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=",
+        "alt": "Payroll Tax, Payroll Processing, 940, 941, NYS45\n"
+      },
+      {
+        "src": "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=",
+        "alt": "Payroll Tax, Payroll Processing, NYS45, 940, 941"
+      }
+    ],
+    "links": [
+      {
+        "href": "/",
+        "text": ""
+      },
+      {
+        "href": "#",
+        "text": ""
+      },
+      {
+        "href": "/",
+        "text": ""
+      },
+      {
+        "href": "/",
+        "text": "Home"
+      },
+      {
+        "href": "/about-us",
+        "text": "About us"
+      },
+      {
+        "href": "/contact-us",
+        "text": "Contact Us"
+      },
+      {
+        "href": "/tax-services",
+        "text": "Tax Services"
+      },
+      {
+        "href": "/payroll-services",
+        "text": "Payroll Services"
+      },
+      {
+        "href": "#",
+        "text": "More"
+      },
+      {
+        "href": "/",
+        "text": "Home"
+      },
+      {
+        "href": "/about-us",
+        "text": "About us"
+      },
+      {
+        "href": "/contact-us",
+        "text": "Contact Us"
+      },
+      {
+        "href": "/tax-services",
+        "text": "Tax Services"
+      },
+      {
+        "href": "/payroll-services",
+        "text": "Payroll Services"
+      },
+      {
+        "href": "/",
+        "text": "Home"
+      },
+      {
+        "href": "/about-us",
+        "text": "About us"
+      },
+      {
+        "href": "/contact-us",
+        "text": "Contact Us"
+      },
+      {
+        "href": "/tax-services",
+        "text": "Tax Services"
+      },
+      {
+        "href": "/payroll-services",
+        "text": "Payroll Services"
+      },
+      {
+        "href": "/contact-us",
+        "text": "Contact Us"
+      },
+      {
+        "href": "https://www.facebook.com/1115563465180679",
+        "text": ""
+      },
+      {
+        "href": "https://www.instagram.com/crystal_tax",
+        "text": ""
+      },
+      {
+        "href": "https://www.pinterest.com/CrystalTaxInc/",
+        "text": ""
+      },
+      {
+        "href": "https://www.twitter.com/crystal_tax",
+        "text": ""
+      },
+      {
+        "href": "https://www.yelp.com/biz/cr6mEC5XWXgnN3oowKftsQ",
+        "text": ""
+      }
+    ]
+  },
+  "tax-services": {
+    "title": "CrystalTax Inc - Individual Tax Preparation, Business Tax Preparation",
+    "description": "We handle individual tax preparation as well as business tax preparation.",
+    "images": [
+      {
+        "src": "//img1.wsimg.com/isteam/ip/9b51b977-97a1-49a9-b404-fac7e40d8ca8/logo/ba529452-2fa0-47fc-a285-c52c93598950.webp/:/rs=h:80,cg:true,m/qt=q:95",
+        "alt": "CrystalTax Inc"
+      },
+      {
+        "src": "//img1.wsimg.com/isteam/ip/9b51b977-97a1-49a9-b404-fac7e40d8ca8/logo/ba529452-2fa0-47fc-a285-c52c93598950.webp/:/rs=h:80,cg:true,m/qt=q:95",
+        "alt": "CrystalTax Inc"
+      },
+      {
+        "src": "//img1.wsimg.com/isteam/stock/8406/:/cr=t:12.53%25,l:0%25,w:100%25,h:74.93%25/rs=w:600,h:300,cg:true",
+        "alt": "Tax Services, 1040. Tax Prep, IRS, Accountant, Tax Preparer"
+      },
+      {
+        "src": "//img1.wsimg.com/isteam/stock/ny4lbOR/:/cr=t:12.5%25,l:0%25,w:100%25,h:75%25/rs=w:600,h:300,cg:true",
+        "alt": "Tax Services, 1040. Tax Prep, IRS, Accountant, Tax Preparer"
+      }
+    ],
+    "links": [
+      {
+        "href": "/",
+        "text": ""
+      },
+      {
+        "href": "#",
+        "text": ""
+      },
+      {
+        "href": "/",
+        "text": ""
+      },
+      {
+        "href": "/",
+        "text": "Home"
+      },
+      {
+        "href": "/about-us",
+        "text": "About us"
+      },
+      {
+        "href": "/contact-us",
+        "text": "Contact Us"
+      },
+      {
+        "href": "/tax-services",
+        "text": "Tax Services"
+      },
+      {
+        "href": "/payroll-services",
+        "text": "Payroll Services"
+      },
+      {
+        "href": "#",
+        "text": "More"
+      },
+      {
+        "href": "/",
+        "text": "Home"
+      },
+      {
+        "href": "/about-us",
+        "text": "About us"
+      },
+      {
+        "href": "/contact-us",
+        "text": "Contact Us"
+      },
+      {
+        "href": "/tax-services",
+        "text": "Tax Services"
+      },
+      {
+        "href": "/payroll-services",
+        "text": "Payroll Services"
+      },
+      {
+        "href": "/",
+        "text": "Home"
+      },
+      {
+        "href": "/about-us",
+        "text": "About us"
+      },
+      {
+        "href": "/contact-us",
+        "text": "Contact Us"
+      },
+      {
+        "href": "/tax-services",
+        "text": "Tax Services"
+      },
+      {
+        "href": "/payroll-services",
+        "text": "Payroll Services"
+      },
+      {
+        "href": "/contact-us",
+        "text": "Contact Us"
+      },
+      {
+        "href": "/contact-us",
+        "text": "Contact Us Now"
+      },
+      {
+        "href": "https://www.facebook.com/1115563465180679",
+        "text": ""
+      },
+      {
+        "href": "https://www.instagram.com/crystal_tax",
+        "text": ""
+      },
+      {
+        "href": "https://www.pinterest.com/CrystalTaxInc/",
+        "text": ""
+      },
+      {
+        "href": "https://www.twitter.com/crystal_tax",
+        "text": ""
+      },
+      {
+        "href": "https://www.yelp.com/biz/cr6mEC5XWXgnN3oowKftsQ",
+        "text": ""
+      }
+    ]
+  }
+}
