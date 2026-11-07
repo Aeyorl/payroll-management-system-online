@@ -53,7 +53,7 @@ The official brand identity has been integrated across the platform:
 
 2. **About Us (`about-us.html`)**
    - Official stacked brand identity showcase (`pmso-logo.png`).
-   - Company history (founded 2011 by Yasser S. Hamed), core principles, IRS/FTB/EDD audit representation.
+   - Company history (founded 2011), core principles, IRS/FTB/EDD audit representation.
    - Dual feature highlights: *"Your Taxes, Simplified"* & *"Your Business is Ours"*.
 
 3. **Tax Services (`tax-services.html`)**
