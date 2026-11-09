@@ -206,5 +206,29 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log('Autoplay deferred or requires user interaction');
     });
   }
+
+  // 7. Interactive Location Filtering
+  const filterBtns = document.querySelectorAll('.location-filter-btn');
+  const locationCards = document.querySelectorAll('.location-card');
+
+  if (filterBtns.length > 0 && locationCards.length > 0) {
+    filterBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+        locationCards.forEach((card) => {
+          const region = card.getAttribute('data-region');
+          if (filter === 'all' || region === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  }
+
 });
 

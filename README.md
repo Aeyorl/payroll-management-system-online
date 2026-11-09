@@ -79,6 +79,11 @@ The official brand identity has been integrated across the platform:
    - Physical address (`277 Park Ave, New York, NY 10172`) and office email (`pmsoinc@mail2usa.com`).
    - Interactive Google Map embed centered on office location.
 
+7. **Our Locations (`locations.html` / `/locations`)**
+   - Interactive regional office directory featuring 11 regional hubs across New York, Georgia, Utah, Florida, Puerto Rico, and Tennessee, alongside nationwide remote consultation capabilities.
+   - Interactive state filter tabs (All, NY, GA, UT, FL, PR, TN) with instant real-time filtering.
+   - Rich office cards complete with addresses, services offered, direct Google Maps directions links, and consultation booking.
+
 ---
 
 ## 🚀 Running the Site Locally
@@ -111,6 +116,7 @@ python -m http.server 3000 --directory c:\Users\aeyon\crystaltaxinc-clone
 ├── payroll-services.html       # Payroll processing & tax filing
 ├── accounting-services.html    # Accounting & Bookkeeping solutions
 ├── contact-us.html             # Contact form, office hours & Google map
+├── locations.html              # Regional offices directory & interactive state filter
 ├── favicon.ico                 # Standard multi-res browser favicon
 ├── apple-touch-icon.png        # Root iOS touch icon (180x180)
 ├── site.webmanifest            # W3C Web App Manifest
