@@ -1549,6 +1549,53 @@ p {
   margin-bottom: 2.75rem;
 }
 
+/* Locations Search Bar */
+.locations-search-container {
+  max-width: 620px;
+  margin: 0 auto 1.5rem auto;
+  position: relative;
+}
+
+.locations-search-input {
+  width: 100%;
+  padding: 0.85rem 1.25rem 0.85rem 3rem;
+  font-size: 1rem;
+  font-family: var(--font-body);
+  border: 1.5px solid var(--border-light);
+  border-radius: 50px;
+  background-color: #ffffff;
+  color: var(--text-dark);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  outline: none;
+  transition: var(--transition);
+}
+
+.locations-search-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(0, 105, 200, 0.15);
+}
+
+.locations-search-icon {
+  position: absolute;
+  left: 1.15rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--neutral-gray);
+  pointer-events: none;
+}
+
+.no-locations-message {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  background-color: #ffffff;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+  margin-bottom: 2rem;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--text-dark);
+}
+
 .location-filter-btn {
   background-color: #ffffff;
   color: var(--text-dark);

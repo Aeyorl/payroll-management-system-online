@@ -25,3 +25,4 @@ for url in urls:
                 print(f"      Location Cards: {loc_count}")
     except Exception as e:
         print(f"[ERR] {url} -> {e}")
+

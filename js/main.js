@@ -207,27 +207,57 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 7. Interactive Location Filtering
+  // 7. Interactive Location Filtering & Search
   const filterBtns = document.querySelectorAll('.location-filter-btn');
   const locationCards = document.querySelectorAll('.location-card');
+  const searchInput = document.getElementById('locationSearchInput');
+  const noLocationsMsg = document.getElementById('noLocationsMessage');
 
-  if (filterBtns.length > 0 && locationCards.length > 0) {
-    filterBtns.forEach((btn) => {
-      btn.addEventListener('click', () => {
-        filterBtns.forEach((b) => b.classList.remove('active'));
-        btn.classList.add('active');
+  if (locationCards.length > 0) {
+    let currentFilter = 'all';
+    let searchQuery = '';
 
-        const filter = btn.getAttribute('data-filter');
-        locationCards.forEach((card) => {
-          const region = card.getAttribute('data-region');
-          if (filter === 'all' || region === filter) {
-            card.style.display = 'flex';
-          } else {
-            card.style.display = 'none';
-          }
+    function updateLocations() {
+      let visibleCount = 0;
+      const terms = searchQuery.trim().toLowerCase().split(/\s+/).filter(Boolean);
+
+      locationCards.forEach((card) => {
+        const region = card.getAttribute('data-region') || '';
+        const searchData = (card.getAttribute('data-search') || '').toLowerCase();
+
+        const matchesFilter = (currentFilter === 'all' || region === currentFilter);
+        const matchesSearch = terms.length === 0 || terms.every(term => searchData.includes(term));
+
+        if (matchesFilter && matchesSearch) {
+          card.style.display = 'flex';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      if (noLocationsMsg) {
+        noLocationsMsg.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+    }
+
+    if (filterBtns.length > 0) {
+      filterBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach((b) => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentFilter = btn.getAttribute('data-filter') || 'all';
+          updateLocations();
         });
       });
-    });
+    }
+
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        searchQuery = e.target.value;
+        updateLocations();
+      });
+    }
   }
 
 });

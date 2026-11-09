@@ -136,33 +136,57 @@
       <div class="container">
         <h2 class="section-title">Regional Offices &amp; Nationwide Reach</h2>
         <p class="section-subtitle">
-          Whether you need local in-person tax and payroll advisory or seamless digital support across our remote-first infrastructure, our dedicated teams are ready to serve you.
+          Whether you need local in-person tax and payroll advisory across our regional hubs or seamless digital support across our remote-first infrastructure, our dedicated teams are ready to serve you.
         </p>
+
+        <!-- Search Bar -->
+        <div class="locations-search-container">
+          <svg class="locations-search-icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+          </svg>
+          <input type="text" id="locationSearchInput" class="locations-search-input" placeholder="Search by city, state, or ZIP code (e.g. Dallas, Seattle, Chicago, 30309)..." aria-label="Search locations by city, state, or ZIP code" />
+        </div>
 
         <!-- Interactive Region Filter Pills -->
         <div class="locations-filter-bar">
-          <button type="button" class="location-filter-btn active" data-filter="all">All Locations</button>
+          <button type="button" class="location-filter-btn active" data-filter="all">All Locations (43)</button>
           <button type="button" class="location-filter-btn" data-filter="ny">New York (HQ)</button>
           <button type="button" class="location-filter-btn" data-filter="ga">Georgia</button>
+          <button type="button" class="location-filter-btn" data-filter="tx">Texas</button>
+          <button type="button" class="location-filter-btn" data-filter="pa">Pennsylvania</button>
+          <button type="button" class="location-filter-btn" data-filter="il">Illinois</button>
+          <button type="button" class="location-filter-btn" data-filter="oh">Ohio</button>
+          <button type="button" class="location-filter-btn" data-filter="nc">North Carolina</button>
+          <button type="button" class="location-filter-btn" data-filter="mi">Michigan</button>
+          <button type="button" class="location-filter-btn" data-filter="wa">Washington</button>
+          <button type="button" class="location-filter-btn" data-filter="in">Indiana</button>
+          <button type="button" class="location-filter-btn" data-filter="sc">South Carolina</button>
+          <button type="button" class="location-filter-btn" data-filter="tn">Tennessee</button>
           <button type="button" class="location-filter-btn" data-filter="ut">Utah</button>
           <button type="button" class="location-filter-btn" data-filter="fl">Florida</button>
           <button type="button" class="location-filter-btn" data-filter="pr">Puerto Rico</button>
-          <button type="button" class="location-filter-btn" data-filter="tn">Tennessee</button>
+        </div>
+
+        <!-- No Results Message (Hidden by default) -->
+        <div id="noLocationsMessage" class="no-locations-message" style="display: none;">
+          <p>No office locations match your search query. Please try searching another city, state, or ZIP code.</p>
+          <p style="margin-top: 0.5rem; font-size: 0.95rem; color: var(--text-muted);">
+            Remember: We serve clients nationwide remotely across all 50 U.S. states.
+          </p>
         </div>
 
         <!-- Locations Grid -->
         <div class="locations-grid" id="locationsGrid">
-
-          <!-- 1. New York Corporate HQ -->
-          <article class="location-card" data-region="ny">
+          <!-- New York - New York City -->
+          <article class="location-card" data-region="ny" data-search="new york city new york new york, ny 10172 277 park ave executive payroll corporate tax irs audit defense bookkeeping">
             <div class="location-card-header">
               <span class="location-state-pill">New York</span>
               <h3 class="location-card-title">New York Headquarters</h3>
-              <div class="location-card-subtitle">Corporate Headquarters &amp; Mid-Atlantic Hub</div>
+              <div class="location-card-subtitle">Corporate Headquarters & Mid-Atlantic Hub</div>
             </div>
             <div class="location-card-body">
               <div class="location-address-box">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
                 <div>
                   <strong>277 Park Ave</strong><br />
                   New York, NY 10172
@@ -176,25 +200,55 @@
               </div>
             </div>
             <div class="location-card-footer">
-              <a href="https://maps.google.com/?q=277+Park+Ave,+New+York,+NY+10172" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+              <a href="https://maps.google.com/?q=277%20Park%20Ave%2C%20New%20York%2C%20NY%2010172" target="_blank" rel="noopener noreferrer" class="location-directions-link">
                 Get Directions &rarr;
               </a>
               <a href="contact-us.html" class="location-action-btn">Contact Office</a>
             </div>
           </article>
 
-          <!-- 2. Georgia - Atlanta Flagship -->
-          <article class="location-card" data-region="ga">
+          <!-- New York - Buffalo -->
+          <article class="location-card" data-region="ny" data-search="buffalo new york buffalo, ny 14209 672 delaware avenue small business payroll individual tax sales tax compliance bookkeeping">
             <div class="location-card-header">
-              <span class="location-state-pill">Georgia</span>
-              <h3 class="location-card-title">Atlanta Flagship Office</h3>
-              <div class="location-card-subtitle">Midtown Business District &amp; Southeast Hub</div>
+              <span class="location-state-pill">New York</span>
+              <h3 class="location-card-title">Buffalo Regional Office</h3>
+              <div class="location-card-subtitle">Western New York & Niagara Frontier Hub</div>
             </div>
             <div class="location-card-body">
               <div class="location-address-box">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
                 <div>
-                  <strong>1100 Peachtree St NE, Suite 690</strong><br />
+                  <strong>672 Delaware Avenue</strong><br />
+                  Buffalo, NY 14209
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">Small Business Payroll</span>
+                <span class="location-service-tag">Individual Tax</span>
+                <span class="location-service-tag">Sales Tax Compliance</span>
+                <span class="location-service-tag">Bookkeeping</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=672%20Delaware%20Avenue%2C%20Buffalo%2C%20NY%2014209" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- Georgia - Atlanta -->
+          <article class="location-card" data-region="ga" data-search="atlanta georgia atlanta, ga 30309 2233 peachtree road multi-state tax payroll processing cfo advisory corporate 1120">
+            <div class="location-card-header">
+              <span class="location-state-pill">Georgia</span>
+              <h3 class="location-card-title">Atlanta Peachtree Office</h3>
+              <div class="location-card-subtitle">Buckhead & Midtown Metro Business Hub</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>2233 Peachtree Road</strong><br />
                   Atlanta, GA 30309
                 </div>
               </div>
@@ -202,26 +256,27 @@
                 <span class="location-service-tag">Multi-State Tax</span>
                 <span class="location-service-tag">Payroll Processing</span>
                 <span class="location-service-tag">CFO Advisory</span>
+                <span class="location-service-tag">Corporate 1120</span>
               </div>
             </div>
             <div class="location-card-footer">
-              <a href="https://maps.google.com/?q=1100+Peachtree+St+NE+%23690,+Atlanta,+GA+30309" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+              <a href="https://maps.google.com/?q=2233%20Peachtree%20Road%2C%20Atlanta%2C%20GA%2030309" target="_blank" rel="noopener noreferrer" class="location-directions-link">
                 Get Directions &rarr;
               </a>
               <a href="contact-us.html" class="location-action-btn">Contact Office</a>
             </div>
           </article>
 
-          <!-- 3. Georgia - Perimeter / Dunwoody -->
-          <article class="location-card" data-region="ga">
+          <!-- Georgia - Atlanta (Perimeter) -->
+          <article class="location-card" data-region="ga" data-search="atlanta (perimeter) georgia atlanta, ga 30346 4408 perimeter lofts circle small business tax direct deposit monthly accounting quarterly filings">
             <div class="location-card-header">
               <span class="location-state-pill">Georgia</span>
               <h3 class="location-card-title">Perimeter Atlanta Office</h3>
-              <div class="location-card-subtitle">North Metro, Sandy Springs &amp; Dunwoody</div>
+              <div class="location-card-subtitle">North Metro, Sandy Springs & Dunwoody</div>
             </div>
             <div class="location-card-body">
               <div class="location-address-box">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
                 <div>
                   <strong>4408 Perimeter Lofts Circle</strong><br />
                   Atlanta, GA 30346
@@ -231,26 +286,968 @@
                 <span class="location-service-tag">Small Business Tax</span>
                 <span class="location-service-tag">Direct Deposit</span>
                 <span class="location-service-tag">Monthly Accounting</span>
+                <span class="location-service-tag">Quarterly Filings</span>
               </div>
             </div>
             <div class="location-card-footer">
-              <a href="https://maps.google.com/?q=4408+Perimeter+Lofts+Cir,+Atlanta,+GA+30346" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+              <a href="https://maps.google.com/?q=4408%20Perimeter%20Lofts%20Circle%2C%20Atlanta%2C%20GA%2030346" target="_blank" rel="noopener noreferrer" class="location-directions-link">
                 Get Directions &rarr;
               </a>
               <a href="contact-us.html" class="location-action-btn">Contact Office</a>
             </div>
           </article>
 
-          <!-- 4. Utah - Salt Lake City -->
-          <article class="location-card" data-region="ut">
+          <!-- Georgia - Columbus -->
+          <article class="location-card" data-region="ga" data-search="columbus georgia columbus, ga 31904 2357 warm springs road payroll management state & federal tax business bookkeeping">
             <div class="location-card-header">
-              <span class="location-state-pill">Utah</span>
-              <h3 class="location-card-title">Salt Lake City Office</h3>
-              <div class="location-card-subtitle">Downtown SLC &amp; Wasatch Front</div>
+              <span class="location-state-pill">Georgia</span>
+              <h3 class="location-card-title">Columbus Regional Office</h3>
+              <div class="location-card-subtitle">Chattahoochee Valley Regional Office</div>
             </div>
             <div class="location-card-body">
               <div class="location-address-box">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>2357 Warm Springs Road</strong><br />
+                  Columbus, GA 31904
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">Payroll Management</span>
+                <span class="location-service-tag">State & Federal Tax</span>
+                <span class="location-service-tag">Business Bookkeeping</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=2357%20Warm%20Springs%20Road%2C%20Columbus%2C%20GA%2031904" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- Georgia - Savannah -->
+          <article class="location-card" data-region="ga" data-search="savannah georgia savannah, ga 31401 1901 waters avenue, suite c logistics & port payroll business tax filing financial reporting">
+            <div class="location-card-header">
+              <span class="location-state-pill">Georgia</span>
+              <h3 class="location-card-title">Savannah Coastal Office</h3>
+              <div class="location-card-subtitle">Coastal Georgia & Savannah Port Commercial Hub</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>1901 Waters Avenue, Suite C</strong><br />
+                  Savannah, GA 31401
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">Logistics & Port Payroll</span>
+                <span class="location-service-tag">Business Tax Filing</span>
+                <span class="location-service-tag">Financial Reporting</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=1901%20Waters%20Avenue%2C%20Suite%20C%2C%20Savannah%2C%20GA%2031401" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- Texas - Houston -->
+          <article class="location-card" data-region="tx" data-search="houston texas houston, tx 77079 11767 katy freeway corporate tax planning commercial payroll franchise tax filing bookkeeping">
+            <div class="location-card-header">
+              <span class="location-state-pill">Texas</span>
+              <h3 class="location-card-title">Houston Energy Corridor Office</h3>
+              <div class="location-card-subtitle">Greater Houston & Gulf Coast Commercial Center</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>11767 Katy Freeway</strong><br />
+                  Houston, TX 77079
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">Corporate Tax Planning</span>
+                <span class="location-service-tag">Commercial Payroll</span>
+                <span class="location-service-tag">Franchise Tax Filing</span>
+                <span class="location-service-tag">Bookkeeping</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=11767%20Katy%20Freeway%2C%20Houston%2C%20TX%2077079" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- Texas - Dallas -->
+          <article class="location-card" data-region="tx" data-search="dallas texas dallas, tx 75244 4201 spring valley road direct deposit payroll partnership 1065 irs representation ledger review">
+            <div class="location-card-header">
+              <span class="location-state-pill">Texas</span>
+              <h3 class="location-card-title">Dallas Spring Valley Office</h3>
+              <div class="location-card-subtitle">DFW Metroplex & North Texas Regional Hub</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>4201 Spring Valley Road</strong><br />
+                  Dallas, TX 75244
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">Direct Deposit Payroll</span>
+                <span class="location-service-tag">Partnership 1065</span>
+                <span class="location-service-tag">IRS Representation</span>
+                <span class="location-service-tag">Ledger Review</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=4201%20Spring%20Valley%20Road%2C%20Dallas%2C%20TX%2075244" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- Texas - Austin -->
+          <article class="location-card" data-region="tx" data-search="austin texas austin, tx 78759 9430 research blvd scale-up payroll entity formation tax multi-state compliance bookkeeping">
+            <div class="location-card-header">
+              <span class="location-state-pill">Texas</span>
+              <h3 class="location-card-title">Austin Technology Corridor Office</h3>
+              <div class="location-card-subtitle">Silicon Hills & Central Texas Regional Hub</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>9430 Research Blvd</strong><br />
+                  Austin, TX 78759
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">Scale-Up Payroll</span>
+                <span class="location-service-tag">Entity Formation Tax</span>
+                <span class="location-service-tag">Multi-State Compliance</span>
+                <span class="location-service-tag">Bookkeeping</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=9430%20Research%20Blvd%2C%20Austin%2C%20TX%2078759" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- Pennsylvania - Philadelphia -->
+          <article class="location-card" data-region="pa" data-search="philadelphia pennsylvania philadelphia, pa 19103 30 s 17th st city wage tax advisory corporate payroll federal & state filing financial review">
+            <div class="location-card-header">
+              <span class="location-state-pill">Pennsylvania</span>
+              <h3 class="location-card-title">Philadelphia Center City Office</h3>
+              <div class="location-card-subtitle">Center City & Delaware Valley Commercial Hub</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>30 S 17th St</strong><br />
+                  Philadelphia, PA 19103
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">City Wage Tax Advisory</span>
+                <span class="location-service-tag">Corporate Payroll</span>
+                <span class="location-service-tag">Federal & State Filing</span>
+                <span class="location-service-tag">Financial Review</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=30%20S%2017th%20St%2C%20Philadelphia%2C%20PA%2019103" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- Pennsylvania - Pittsburgh -->
+          <article class="location-card" data-region="pa" data-search="pittsburgh pennsylvania pittsburgh, pa 15220 750 holiday dr commercial payroll corporate 1120 small business accounting">
+            <div class="location-card-header">
+              <span class="location-state-pill">Pennsylvania</span>
+              <h3 class="location-card-title">Pittsburgh Parkway Office</h3>
+              <div class="location-card-subtitle">Foster Plaza & Western PA Regional Center</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>750 Holiday Dr</strong><br />
+                  Pittsburgh, PA 15220
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">Commercial Payroll</span>
+                <span class="location-service-tag">Corporate 1120</span>
+                <span class="location-service-tag">Small Business Accounting</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=750%20Holiday%20Dr%2C%20Pittsburgh%2C%20PA%2015220" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- Pennsylvania - Erie -->
+          <article class="location-card" data-region="pa" data-search="erie pennsylvania erie, pa 16508 3126 peach st individual tax prep weekly/bi-weekly payroll local compliance">
+            <div class="location-card-header">
+              <span class="location-state-pill">Pennsylvania</span>
+              <h3 class="location-card-title">Erie Lakefront Office</h3>
+              <div class="location-card-subtitle">Lake Erie Regional & Tri-State Center</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>3126 Peach St</strong><br />
+                  Erie, PA 16508
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">Individual Tax Prep</span>
+                <span class="location-service-tag">Weekly/Bi-Weekly Payroll</span>
+                <span class="location-service-tag">Local Compliance</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=3126%20Peach%20St%2C%20Erie%2C%20PA%2016508" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- Illinois - Chicago -->
+          <article class="location-card" data-region="il" data-search="chicago illinois chicago, il 60654 620 n lasalle dr midwest corporate payroll il-1120 filing irs audit defense cfo advisory">
+            <div class="location-card-header">
+              <span class="location-state-pill">Illinois</span>
+              <h3 class="location-card-title">Chicago River North Office</h3>
+              <div class="location-card-subtitle">Downtown Chicago & Cook County Business Hub</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>620 N LaSalle Dr</strong><br />
+                  Chicago, IL 60654
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">Midwest Corporate Payroll</span>
+                <span class="location-service-tag">IL-1120 Filing</span>
+                <span class="location-service-tag">IRS Audit Defense</span>
+                <span class="location-service-tag">CFO Advisory</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=620%20N%20LaSalle%20Dr%2C%20Chicago%2C%20IL%2060654" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- Illinois - Rockford -->
+          <article class="location-card" data-region="il" data-search="rockford illinois rockford, il 61107 483 n mulford rd small business payroll tax returns year-end w-2/1099 prep">
+            <div class="location-card-header">
+              <span class="location-state-pill">Illinois</span>
+              <h3 class="location-card-title">Rockford Regional Office</h3>
+              <div class="location-card-subtitle">Northern Illinois Commercial Center</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>483 N Mulford Rd</strong><br />
+                  Rockford, IL 61107
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">Small Business Payroll</span>
+                <span class="location-service-tag">Tax Returns</span>
+                <span class="location-service-tag">Year-End W-2/1099 Prep</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=483%20N%20Mulford%20Rd%2C%20Rockford%2C%20IL%2061107" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- Ohio - Columbus -->
+          <article class="location-card" data-region="oh" data-search="columbus ohio columbus, oh 43215 10 w broad st state tax compliance corporate payroll municipal tax advisory bookkeeping">
+            <div class="location-card-header">
+              <span class="location-state-pill">Ohio</span>
+              <h3 class="location-card-title">Columbus Broad Street Office</h3>
+              <div class="location-card-subtitle">Downtown Columbus & State Capital Hub</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>10 W Broad St</strong><br />
+                  Columbus, OH 43215
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">State Tax Compliance</span>
+                <span class="location-service-tag">Corporate Payroll</span>
+                <span class="location-service-tag">Municipal Tax Advisory</span>
+                <span class="location-service-tag">Bookkeeping</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=10%20W%20Broad%20St%2C%20Columbus%2C%20OH%2043215" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- Ohio - Cincinnati -->
+          <article class="location-card" data-region="oh" data-search="cincinnati ohio cincinnati, oh 45202 310 culvert st direct deposit multi-state payroll individual & corp tax">
+            <div class="location-card-header">
+              <span class="location-state-pill">Ohio</span>
+              <h3 class="location-card-title">Cincinnati Downtown Office</h3>
+              <div class="location-card-subtitle">Greater Cincinnati & Tri-State Regional Hub</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>310 Culvert St</strong><br />
+                  Cincinnati, OH 45202
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">Direct Deposit</span>
+                <span class="location-service-tag">Multi-State Payroll</span>
+                <span class="location-service-tag">Individual & Corp Tax</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=310%20Culvert%20St%2C%20Cincinnati%2C%20OH%2045202" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- Ohio - Toledo -->
+          <article class="location-card" data-region="oh" data-search="toledo ohio toledo, oh 43614 5660 southwyck blvd manufacturing payroll quarterly filings small business accounting">
+            <div class="location-card-header">
+              <span class="location-state-pill">Ohio</span>
+              <h3 class="location-card-title">Toledo Southwyck Office</h3>
+              <div class="location-card-subtitle">Northwest Ohio & Lake Erie Commerce Hub</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>5660 Southwyck Blvd</strong><br />
+                  Toledo, OH 43614
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">Manufacturing Payroll</span>
+                <span class="location-service-tag">Quarterly Filings</span>
+                <span class="location-service-tag">Small Business Accounting</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=5660%20Southwyck%20Blvd%2C%20Toledo%2C%20OH%2043614" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- Ohio - Akron -->
+          <article class="location-card" data-region="oh" data-search="akron ohio akron, oh 44313 1640 akron peninsula rd business tax filings payroll solutions financial consultation">
+            <div class="location-card-header">
+              <span class="location-state-pill">Ohio</span>
+              <h3 class="location-card-title">Akron Peninsula Office</h3>
+              <div class="location-card-subtitle">Northeast Ohio & Summit County Office</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>1640 Akron Peninsula Rd</strong><br />
+                  Akron, OH 44313
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">Business Tax Filings</span>
+                <span class="location-service-tag">Payroll Solutions</span>
+                <span class="location-service-tag">Financial Consultation</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=1640%20Akron%20Peninsula%20Rd%2C%20Akron%2C%20OH%2044313" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- North Carolina - Charlotte -->
+          <article class="location-card" data-region="nc" data-search="charlotte north carolina charlotte, nc 28262 10130 mallard creek rd #300 executive payroll banking & finance tax multi-entity accounting audit shield">
+            <div class="location-card-header">
+              <span class="location-state-pill">North Carolina</span>
+              <h3 class="location-card-title">Charlotte Mallard Creek Office</h3>
+              <div class="location-card-subtitle">University City & Queen City Financial Hub</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>10130 Mallard Creek Rd #300</strong><br />
+                  Charlotte, NC 28262
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">Executive Payroll</span>
+                <span class="location-service-tag">Banking & Finance Tax</span>
+                <span class="location-service-tag">Multi-Entity Accounting</span>
+                <span class="location-service-tag">Audit Shield</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=10130%20Mallard%20Creek%20Rd%20%23300%2C%20Charlotte%2C%20NC%2028262" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- North Carolina - Raleigh -->
+          <article class="location-card" data-region="nc" data-search="raleigh north carolina raleigh, nc 27617 8801 fast park dr tech payroll solutions state return prep corporate tax 1120s bookkeeping">
+            <div class="location-card-header">
+              <span class="location-state-pill">North Carolina</span>
+              <h3 class="location-card-title">Raleigh Brier Creek Office</h3>
+              <div class="location-card-subtitle">Research Triangle & Capital Metro Hub</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>8801 Fast Park Dr</strong><br />
+                  Raleigh, NC 27617
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">Tech Payroll Solutions</span>
+                <span class="location-service-tag">State Return Prep</span>
+                <span class="location-service-tag">Corporate Tax 1120S</span>
+                <span class="location-service-tag">Bookkeeping</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=8801%20Fast%20Park%20Dr%2C%20Raleigh%2C%20NC%2027617" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- North Carolina - Greensboro -->
+          <article class="location-card" data-region="nc" data-search="greensboro north carolina greensboro, nc 27410 204 muirs chapel rd, suite 100 small business payroll income tax filing quarterly estimates">
+            <div class="location-card-header">
+              <span class="location-state-pill">North Carolina</span>
+              <h3 class="location-card-title">Greensboro Triad Office</h3>
+              <div class="location-card-subtitle">Piedmont Triad Regional Office</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>204 Muirs Chapel Rd, Suite 100</strong><br />
+                  Greensboro, NC 27410
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">Small Business Payroll</span>
+                <span class="location-service-tag">Income Tax Filing</span>
+                <span class="location-service-tag">Quarterly Estimates</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=204%20Muirs%20Chapel%20Rd%2C%20Suite%20100%2C%20Greensboro%2C%20NC%2027410" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- North Carolina - Durham -->
+          <article class="location-card" data-region="nc" data-search="durham north carolina durham, nc 27713 68 tw alexander dr automated payroll corporate 1120 r&d accounting advisory">
+            <div class="location-card-header">
+              <span class="location-state-pill">North Carolina</span>
+              <h3 class="location-card-title">Durham RTP Corridor Office</h3>
+              <div class="location-card-subtitle">Research Triangle Park Tech & Life Sciences Hub</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>68 TW Alexander Dr</strong><br />
+                  Durham, NC 27713
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">Automated Payroll</span>
+                <span class="location-service-tag">Corporate 1120</span>
+                <span class="location-service-tag">R&D Accounting Advisory</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=68%20TW%20Alexander%20Dr%2C%20Durham%2C%20NC%2027713" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- North Carolina - Winston-Salem -->
+          <article class="location-card" data-region="nc" data-search="winston-salem north carolina winston-salem, nc 27103 1665 westbrook plaza dr commercial payroll individual tax business bookkeeping">
+            <div class="location-card-header">
+              <span class="location-state-pill">North Carolina</span>
+              <h3 class="location-card-title">Winston-Salem Regional Office</h3>
+              <div class="location-card-subtitle">Twin City & Forsyth County Commercial Hub</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>1665 Westbrook Plaza Dr</strong><br />
+                  Winston-Salem, NC 27103
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">Commercial Payroll</span>
+                <span class="location-service-tag">Individual Tax</span>
+                <span class="location-service-tag">Business Bookkeeping</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=1665%20Westbrook%20Plaza%20Dr%2C%20Winston-Salem%2C%20NC%2027103" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- Michigan - Detroit -->
+          <article class="location-card" data-region="mi" data-search="detroit michigan detroit, mi 48202 7375 woodward ave automotive & trade payroll corporate tax city of detroit tax irs defense">
+            <div class="location-card-header">
+              <span class="location-state-pill">Michigan</span>
+              <h3 class="location-card-title">Detroit Woodward Office</h3>
+              <div class="location-card-subtitle">New Center & Metro Detroit Commercial Hub</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>7375 Woodward Ave</strong><br />
+                  Detroit, MI 48202
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">Automotive & Trade Payroll</span>
+                <span class="location-service-tag">Corporate Tax</span>
+                <span class="location-service-tag">City of Detroit Tax</span>
+                <span class="location-service-tag">IRS Defense</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=7375%20Woodward%20Ave%2C%20Detroit%2C%20MI%2048202" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- Michigan - Grand Rapids -->
+          <article class="location-card" data-region="mi" data-search="grand rapids michigan grand rapids, mi 49512 4595 broadmoor ave se full-service payroll business tax filing ledger management">
+            <div class="location-card-header">
+              <span class="location-state-pill">Michigan</span>
+              <h3 class="location-card-title">Grand Rapids Broadmoor Office</h3>
+              <div class="location-card-subtitle">West Michigan & Grand Valley Regional Hub</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>4595 Broadmoor Ave SE</strong><br />
+                  Grand Rapids, MI 49512
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">Full-Service Payroll</span>
+                <span class="location-service-tag">Business Tax Filing</span>
+                <span class="location-service-tag">Ledger Management</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=4595%20Broadmoor%20Ave%20SE%2C%20Grand%20Rapids%2C%20MI%2049512" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- Michigan - Sterling Heights -->
+          <article class="location-card" data-region="mi" data-search="sterling heights michigan sterling heights, mi 48312 9001 15 mile rd direct deposit quarterly payroll tax small business accounting">
+            <div class="location-card-header">
+              <span class="location-state-pill">Michigan</span>
+              <h3 class="location-card-title">Sterling Heights Regional Office</h3>
+              <div class="location-card-subtitle">Macomb County Commercial & Industrial Hub</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>9001 15 Mile Rd</strong><br />
+                  Sterling Heights, MI 48312
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">Direct Deposit</span>
+                <span class="location-service-tag">Quarterly Payroll Tax</span>
+                <span class="location-service-tag">Small Business Accounting</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=9001%2015%20Mile%20Rd%2C%20Sterling%20Heights%2C%20MI%2048312" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- Washington - Seattle -->
+          <article class="location-card" data-region="wa" data-search="seattle washington seattle, wa 98104 450 alaskan way s wa b&o tax advisory tech & enterprise payroll federal tax prep cfo consulting">
+            <div class="location-card-header">
+              <span class="location-state-pill">Washington</span>
+              <h3 class="location-card-title">Seattle Waterfront Office</h3>
+              <div class="location-card-subtitle">Pioneer Square & Pacific Northwest Hub</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>450 Alaskan Way S</strong><br />
+                  Seattle, WA 98104
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">WA B&O Tax Advisory</span>
+                <span class="location-service-tag">Tech & Enterprise Payroll</span>
+                <span class="location-service-tag">Federal Tax Prep</span>
+                <span class="location-service-tag">CFO Consulting</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=450%20Alaskan%20Way%20S%2C%20Seattle%2C%20WA%2098104" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- Washington - Spokane -->
+          <article class="location-card" data-region="wa" data-search="spokane washington spokane, wa 99204 620 s washington st small business payroll individual tax bookkeeping services">
+            <div class="location-card-header">
+              <span class="location-state-pill">Washington</span>
+              <h3 class="location-card-title">Spokane Regional Office</h3>
+              <div class="location-card-subtitle">Inland Northwest Regional Center</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>620 S Washington St</strong><br />
+                  Spokane, WA 99204
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">Small Business Payroll</span>
+                <span class="location-service-tag">Individual Tax</span>
+                <span class="location-service-tag">Bookkeeping Services</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=620%20S%20Washington%20St%2C%20Spokane%2C%20WA%2099204" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- Washington - Tacoma -->
+          <article class="location-card" data-region="wa" data-search="tacoma washington tacoma, wa 98409 5439 s tacoma way commercial payroll corporate filing sales tax compliance">
+            <div class="location-card-header">
+              <span class="location-state-pill">Washington</span>
+              <h3 class="location-card-title">Tacoma South Sound Office</h3>
+              <div class="location-card-subtitle">South Sound & Pierce County Hub</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>5439 S Tacoma Way</strong><br />
+                  Tacoma, WA 98409
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">Commercial Payroll</span>
+                <span class="location-service-tag">Corporate Filing</span>
+                <span class="location-service-tag">Sales Tax Compliance</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=5439%20S%20Tacoma%20Way%2C%20Tacoma%2C%20WA%2098409" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- Indiana - Indianapolis -->
+          <article class="location-card" data-region="in" data-search="indianapolis indiana indianapolis, in 46216 9165 otis ave indiana county tax prep direct deposit payroll corporate 1120s monthly ledger">
+            <div class="location-card-header">
+              <span class="location-state-pill">Indiana</span>
+              <h3 class="location-card-title">Indianapolis Fort Harrison Office</h3>
+              <div class="location-card-subtitle">Fort Harrison & Circle City Regional Hub</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>9165 Otis Ave</strong><br />
+                  Indianapolis, IN 46216
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">Indiana County Tax Prep</span>
+                <span class="location-service-tag">Direct Deposit Payroll</span>
+                <span class="location-service-tag">Corporate 1120S</span>
+                <span class="location-service-tag">Monthly Ledger</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=9165%20Otis%20Ave%2C%20Indianapolis%2C%20IN%2046216" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- Indiana - Fort Wayne -->
+          <article class="location-card" data-region="in" data-search="fort wayne indiana fort wayne, in 46804 4310 illinois rd small business payroll tax filing w-2 & 1099 generation">
+            <div class="location-card-header">
+              <span class="location-state-pill">Indiana</span>
+              <h3 class="location-card-title">Fort Wayne Regional Office</h3>
+              <div class="location-card-subtitle">Northeast Indiana Commercial Center</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>4310 Illinois Rd</strong><br />
+                  Fort Wayne, IN 46804
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">Small Business Payroll</span>
+                <span class="location-service-tag">Tax Filing</span>
+                <span class="location-service-tag">W-2 & 1099 Generation</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=4310%20Illinois%20Rd%2C%20Fort%20Wayne%2C%20IN%2046804" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- Indiana - Evansville -->
+          <article class="location-card" data-region="in" data-search="evansville indiana evansville, in 47708 915 main st payroll solutions individual & business tax financial planning">
+            <div class="location-card-header">
+              <span class="location-state-pill">Indiana</span>
+              <h3 class="location-card-title">Evansville Main Street Office</h3>
+              <div class="location-card-subtitle">Tri-State Southwest Indiana Hub</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>915 Main St</strong><br />
+                  Evansville, IN 47708
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">Payroll Solutions</span>
+                <span class="location-service-tag">Individual & Business Tax</span>
+                <span class="location-service-tag">Financial Planning</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=915%20Main%20St%2C%20Evansville%2C%20IN%2047708" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- Indiana - Fishers -->
+          <article class="location-card" data-region="in" data-search="fishers indiana fishers, in 46037 11650 lantern rd automated payroll state tax filing corporate accounting">
+            <div class="location-card-header">
+              <span class="location-state-pill">Indiana</span>
+              <h3 class="location-card-title">Fishers Techway Office</h3>
+              <div class="location-card-subtitle">Hamilton County & Tech Corridor Hub</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>11650 Lantern Rd</strong><br />
+                  Fishers, IN 46037
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">Automated Payroll</span>
+                <span class="location-service-tag">State Tax Filing</span>
+                <span class="location-service-tag">Corporate Accounting</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=11650%20Lantern%20Rd%2C%20Fishers%2C%20IN%2046037" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- South Carolina - Charleston -->
+          <article class="location-card" data-region="sc" data-search="charleston south carolina charleston, sc 29403 677 king st hospitality & trade payroll sc entity tax filing irs representation bookkeeping">
+            <div class="location-card-header">
+              <span class="location-state-pill">South Carolina</span>
+              <h3 class="location-card-title">Charleston King Street Office</h3>
+              <div class="location-card-subtitle">Upper King & Lowcountry Commercial Hub</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>677 King St</strong><br />
+                  Charleston, SC 29403
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">Hospitality & Trade Payroll</span>
+                <span class="location-service-tag">SC Entity Tax Filing</span>
+                <span class="location-service-tag">IRS Representation</span>
+                <span class="location-service-tag">Bookkeeping</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=677%20King%20St%2C%20Charleston%2C%20SC%2029403" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- South Carolina - Columbia -->
+          <article class="location-card" data-region="sc" data-search="columbia south carolina columbia, sc 29210 140 stoneridge dr small business payroll state return prep quarterly filings">
+            <div class="location-card-header">
+              <span class="location-state-pill">South Carolina</span>
+              <h3 class="location-card-title">Columbia Midlands Office</h3>
+              <div class="location-card-subtitle">Midlands & Capital Regional Office</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>140 Stoneridge Dr</strong><br />
+                  Columbia, SC 29210
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">Small Business Payroll</span>
+                <span class="location-service-tag">State Return Prep</span>
+                <span class="location-service-tag">Quarterly Filings</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=140%20Stoneridge%20Dr%2C%20Columbia%2C%20SC%2029210" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- Tennessee - Nashville -->
+          <article class="location-card" data-region="tn" data-search="nashville tennessee nashville, tn 37203 1801 west end avenue entertainment & corporate payroll franchise & excise tax irs audit defense cfo advisory">
+            <div class="location-card-header">
+              <span class="location-state-pill">Tennessee</span>
+              <h3 class="location-card-title">Nashville Midtown Office</h3>
+              <div class="location-card-subtitle">Palmer Plaza / Midtown & Music Row Commercial Hub</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>1801 West End Avenue</strong><br />
+                  Nashville, TN 37203
+                </div>
+              </div>
+              <div class="location-services-tags">
+                <span class="location-service-tag">Entertainment & Corporate Payroll</span>
+                <span class="location-service-tag">Franchise & Excise Tax</span>
+                <span class="location-service-tag">IRS Audit Defense</span>
+                <span class="location-service-tag">CFO Advisory</span>
+              </div>
+            </div>
+            <div class="location-card-footer">
+              <a href="https://maps.google.com/?q=1801%20West%20End%20Avenue%2C%20Nashville%2C%20TN%2037203" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+                Get Directions &rarr;
+              </a>
+              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
+            </div>
+          </article>
+
+          <!-- Utah - Salt Lake City -->
+          <article class="location-card" data-region="ut" data-search="salt lake city utah salt lake city, ut 84101 26 s rio grande st #2072 tech accounting state tax filing payroll compliance">
+            <div class="location-card-header">
+              <span class="location-state-pill">Utah</span>
+              <h3 class="location-card-title">Salt Lake City Office</h3>
+              <div class="location-card-subtitle">Downtown SLC & Wasatch Front Hub</div>
+            </div>
+            <div class="location-card-body">
+              <div class="location-address-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
                 <div>
                   <strong>26 S Rio Grande St #2072</strong><br />
                   Salt Lake City, UT 84101
@@ -263,52 +1260,52 @@
               </div>
             </div>
             <div class="location-card-footer">
-              <a href="https://maps.google.com/?q=26+S+Rio+Grande+St+%232072,+Salt+Lake+City,+UT+84101" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+              <a href="https://maps.google.com/?q=26%20S%20Rio%20Grande%20St%20%232072%2C%20Salt%20Lake%20City%2C%20UT%2084101" target="_blank" rel="noopener noreferrer" class="location-directions-link">
                 Get Directions &rarr;
               </a>
               <a href="contact-us.html" class="location-action-btn">Contact Office</a>
             </div>
           </article>
 
-          <!-- 5. Utah - Park City -->
-          <article class="location-card" data-region="ut">
+          <!-- Utah - Park City -->
+          <article class="location-card" data-region="ut" data-search="park city utah park city, ut 84098 1090 center dr high-net-worth advisory real estate tax executive payroll">
             <div class="location-card-header">
               <span class="location-state-pill">Utah</span>
               <h3 class="location-card-title">Park City Office</h3>
-              <div class="location-card-subtitle">Mountain Communities &amp; Executive Services</div>
+              <div class="location-card-subtitle">Mountain Communities & Executive Services</div>
             </div>
             <div class="location-card-body">
               <div class="location-address-box">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
                 <div>
                   <strong>1090 Center Dr</strong><br />
                   Park City, UT 84098
                 </div>
               </div>
               <div class="location-services-tags">
-                <span class="location-service-tag">High-Net-Worth</span>
+                <span class="location-service-tag">High-Net-Worth Advisory</span>
                 <span class="location-service-tag">Real Estate Tax</span>
-                <span class="location-service-tag">Custom Advisory</span>
+                <span class="location-service-tag">Executive Payroll</span>
               </div>
             </div>
             <div class="location-card-footer">
-              <a href="https://maps.google.com/?q=1090+Center+Dr,+Park+City,+UT+84098" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+              <a href="https://maps.google.com/?q=1090%20Center%20Dr%2C%20Park%20City%2C%20UT%2084098" target="_blank" rel="noopener noreferrer" class="location-directions-link">
                 Get Directions &rarr;
               </a>
               <a href="contact-us.html" class="location-action-btn">Contact Office</a>
             </div>
           </article>
 
-          <!-- 6. Utah - Lehi -->
-          <article class="location-card" data-region="ut">
+          <!-- Utah - Lehi -->
+          <article class="location-card" data-region="ut" data-search="lehi utah lehi, ut 84043 2701 n thanksgiving way automated payroll corporate 1120 growth accounting">
             <div class="location-card-header">
               <span class="location-state-pill">Utah</span>
               <h3 class="location-card-title">Lehi (Silicon Slopes)</h3>
-              <div class="location-card-subtitle">Technology Corridor &amp; Scale-Ups</div>
+              <div class="location-card-subtitle">Technology Corridor & Scale-Ups</div>
             </div>
             <div class="location-card-body">
               <div class="location-address-box">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
                 <div>
                   <strong>2701 N Thanksgiving Way</strong><br />
                   Lehi, UT 84043
@@ -317,27 +1314,27 @@
               <div class="location-services-tags">
                 <span class="location-service-tag">Automated Payroll</span>
                 <span class="location-service-tag">Corporate 1120</span>
-                <span class="location-service-tag">Growth Stage Accounting</span>
+                <span class="location-service-tag">Growth Accounting</span>
               </div>
             </div>
             <div class="location-card-footer">
-              <a href="https://maps.google.com/?q=2701+N+Thanksgiving+Way,+Lehi,+UT+84043" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+              <a href="https://maps.google.com/?q=2701%20N%20Thanksgiving%20Way%2C%20Lehi%2C%20UT%2084043" target="_blank" rel="noopener noreferrer" class="location-directions-link">
                 Get Directions &rarr;
               </a>
               <a href="contact-us.html" class="location-action-btn">Contact Office</a>
             </div>
           </article>
 
-          <!-- 7. Utah - Provo / Orem -->
-          <article class="location-card" data-region="ut">
+          <!-- Utah - Provo -->
+          <article class="location-card" data-region="ut" data-search="provo utah provo, ut 84604 440 w riverview way partnership 1065 state audit support payroll ledger">
             <div class="location-card-header">
               <span class="location-state-pill">Utah</span>
               <h3 class="location-card-title">Provo / Utah County Office</h3>
-              <div class="location-card-subtitle">Silicon Slopes South &amp; Commercial Hub</div>
+              <div class="location-card-subtitle">Silicon Slopes South & Commercial Hub</div>
             </div>
             <div class="location-card-body">
               <div class="location-address-box">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
                 <div>
                   <strong>440 W Riverview Way</strong><br />
                   Provo, UT 84604
@@ -350,15 +1347,15 @@
               </div>
             </div>
             <div class="location-card-footer">
-              <a href="https://maps.google.com/?q=440+W+River+Vw+Wy,+Provo,+UT+84604" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+              <a href="https://maps.google.com/?q=440%20W%20Riverview%20Way%2C%20Provo%2C%20UT%2084604" target="_blank" rel="noopener noreferrer" class="location-directions-link">
                 Get Directions &rarr;
               </a>
               <a href="contact-us.html" class="location-action-btn">Contact Office</a>
             </div>
           </article>
 
-          <!-- 8. Utah - St. George -->
-          <article class="location-card" data-region="ut">
+          <!-- Utah - St. George -->
+          <article class="location-card" data-region="ut" data-search="st. george utah st. george, ut 84790 1575 s river rd individual tax local business payroll quarterly filings">
             <div class="location-card-header">
               <span class="location-state-pill">Utah</span>
               <h3 class="location-card-title">St. George Office</h3>
@@ -366,7 +1363,7 @@
             </div>
             <div class="location-card-body">
               <div class="location-address-box">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
                 <div>
                   <strong>1575 S River Rd</strong><br />
                   St. George, UT 84790
@@ -379,23 +1376,23 @@
               </div>
             </div>
             <div class="location-card-footer">
-              <a href="https://maps.google.com/?q=1575+S+River+Rd,+St.+George,+UT+84790" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+              <a href="https://maps.google.com/?q=1575%20S%20River%20Rd%2C%20St.%20George%2C%20UT%2084790" target="_blank" rel="noopener noreferrer" class="location-directions-link">
                 Get Directions &rarr;
               </a>
               <a href="contact-us.html" class="location-action-btn">Contact Office</a>
             </div>
           </article>
 
-          <!-- 9. Florida - Tampa -->
-          <article class="location-card" data-region="fl">
+          <!-- Florida - Tampa -->
+          <article class="location-card" data-region="fl" data-search="tampa florida tampa, fl 33611 5000 culbreath key way #9-323 florida entity filings payroll management federal tax planning">
             <div class="location-card-header">
               <span class="location-state-pill">Florida</span>
               <h3 class="location-card-title">Tampa Gulf Coast Office</h3>
-              <div class="location-card-subtitle">Tampa Bay &amp; Florida Gulf Coast</div>
+              <div class="location-card-subtitle">Tampa Bay & Florida Gulf Coast</div>
             </div>
             <div class="location-card-body">
               <div class="location-address-box">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
                 <div>
                   <strong>5000 Culbreath Key Way #9-323</strong><br />
                   Tampa, FL 33611
@@ -408,23 +1405,23 @@
               </div>
             </div>
             <div class="location-card-footer">
-              <a href="https://maps.google.com/?q=5000+Culbreath+Key+Way+%239-323,+Tampa,+FL+33611" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+              <a href="https://maps.google.com/?q=5000%20Culbreath%20Key%20Way%20%239-323%2C%20Tampa%2C%20FL%2033611" target="_blank" rel="noopener noreferrer" class="location-directions-link">
                 Get Directions &rarr;
               </a>
               <a href="contact-us.html" class="location-action-btn">Contact Office</a>
             </div>
           </article>
 
-          <!-- 10. Puerto Rico - San Juan -->
-          <article class="location-card" data-region="pr">
+          <!-- Puerto Rico - San Juan -->
+          <article class="location-card" data-region="pr" data-search="san juan puerto rico san juan, pr 00907 807 ave. ponce de leon act 60 advisory cross-border payroll compliance review">
             <div class="location-card-header">
               <span class="location-state-pill">Puerto Rico</span>
               <h3 class="location-card-title">San Juan Office</h3>
-              <div class="location-card-subtitle">Territory Center &amp; Regional Operations</div>
+              <div class="location-card-subtitle">Territory Center & Regional Operations</div>
             </div>
             <div class="location-card-body">
               <div class="location-address-box">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
                 <div>
                   <strong>807 Ave. Ponce de Leon</strong><br />
                   San Juan, PR 00907
@@ -437,42 +1434,12 @@
               </div>
             </div>
             <div class="location-card-footer">
-              <a href="https://maps.google.com/?q=807+Ave.+Ponce+de+Leon,+San+Juan,+PR+00907" target="_blank" rel="noopener noreferrer" class="location-directions-link">
+              <a href="https://maps.google.com/?q=807%20Ave.%20Ponce%20de%20Leon%2C%20San%20Juan%2C%20PR%2000907" target="_blank" rel="noopener noreferrer" class="location-directions-link">
                 Get Directions &rarr;
               </a>
               <a href="contact-us.html" class="location-action-btn">Contact Office</a>
             </div>
           </article>
-
-          <!-- 11. Tennessee - Nashville -->
-          <article class="location-card" data-region="tn">
-            <div class="location-card-header">
-              <span class="location-state-pill">Tennessee</span>
-              <h3 class="location-card-title">Nashville Office</h3>
-              <div class="location-card-subtitle">Davidson &amp; Williamson County Hub</div>
-            </div>
-            <div class="location-card-body">
-              <div class="location-address-box">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
-                <div>
-                  <strong>159 4th Ave N</strong><br />
-                  Nashville, TN 37219
-                </div>
-              </div>
-              <div class="location-services-tags">
-                <span class="location-service-tag">Entertainment &amp; Media</span>
-                <span class="location-service-tag">Small Business Payroll</span>
-                <span class="location-service-tag">Income Tax Prep</span>
-              </div>
-            </div>
-            <div class="location-card-footer">
-              <a href="https://maps.google.com/?q=159+4th+Ave+N,+Nashville,+TN+37219" target="_blank" rel="noopener noreferrer" class="location-directions-link">
-                Get Directions &rarr;
-              </a>
-              <a href="contact-us.html" class="location-action-btn">Contact Office</a>
-            </div>
-          </article>
-
         </div>
 
         <!-- Nationwide Remote Services Banner -->

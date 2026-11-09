@@ -870,3 +870,4 @@ for base in TARGET_DIRS:
             print(f'Updated nav in {hp}')
 
 print('Locations integration complete!')
+
