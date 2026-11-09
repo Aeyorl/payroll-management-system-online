@@ -80,7 +80,7 @@ The official brand identity has been integrated across the platform:
    - Interactive Google Map embed centered on office location.
 
 7. **Our Locations (`locations.html` / `/locations`)**
-   - Interactive regional office directory featuring 43 regional hubs across 15 states and territories (New York HQ, Georgia, Texas, Pennsylvania, Illinois, Ohio, North Carolina, Michigan, Washington, Indiana, South Carolina, Tennessee, Utah, Florida, and Puerto Rico), alongside nationwide remote advisory.
+   - Interactive regional office directory featuring 36 regional hubs across 12 states (New York HQ, Georgia, Texas, Pennsylvania, Illinois, Ohio, North Carolina, Michigan, Washington, Indiana, South Carolina, and Tennessee), alongside nationwide remote advisory.
    - Real-time instant search input (searching city, state, address, services, and ZIP code) and responsive state filter pills.
    - Rich office cards complete with addresses, services offered, direct Google Maps directions links, and consultation booking.
 

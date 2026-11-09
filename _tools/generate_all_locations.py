@@ -427,89 +427,6 @@ LOCATIONS = [
         "city_state_zip": "Nashville, TN 37203",
         "services": ["Entertainment & Corporate Payroll", "Franchise & Excise Tax", "IRS Audit Defense", "CFO Advisory"],
         "is_hq": False
-    },
-
-    # 13. Utah (Existing from directory)
-    {
-        "region": "ut",
-        "state_name": "Utah",
-        "city": "Salt Lake City",
-        "title": "Salt Lake City Office",
-        "subtitle": "Downtown SLC & Wasatch Front Hub",
-        "address_line": "26 S Rio Grande St #2072",
-        "city_state_zip": "Salt Lake City, UT 84101",
-        "services": ["Tech Accounting", "State Tax Filing", "Payroll Compliance"],
-        "is_hq": False
-    },
-    {
-        "region": "ut",
-        "state_name": "Utah",
-        "city": "Park City",
-        "title": "Park City Office",
-        "subtitle": "Mountain Communities & Executive Services",
-        "address_line": "1090 Center Dr",
-        "city_state_zip": "Park City, UT 84098",
-        "services": ["High-Net-Worth Advisory", "Real Estate Tax", "Executive Payroll"],
-        "is_hq": False
-    },
-    {
-        "region": "ut",
-        "state_name": "Utah",
-        "city": "Lehi",
-        "title": "Lehi (Silicon Slopes)",
-        "subtitle": "Technology Corridor & Scale-Ups",
-        "address_line": "2701 N Thanksgiving Way",
-        "city_state_zip": "Lehi, UT 84043",
-        "services": ["Automated Payroll", "Corporate 1120", "Growth Accounting"],
-        "is_hq": False
-    },
-    {
-        "region": "ut",
-        "state_name": "Utah",
-        "city": "Provo",
-        "title": "Provo / Utah County Office",
-        "subtitle": "Silicon Slopes South & Commercial Hub",
-        "address_line": "440 W Riverview Way",
-        "city_state_zip": "Provo, UT 84604",
-        "services": ["Partnership 1065", "State Audit Support", "Payroll Ledger"],
-        "is_hq": False
-    },
-    {
-        "region": "ut",
-        "state_name": "Utah",
-        "city": "St. George",
-        "title": "St. George Office",
-        "subtitle": "Southern Utah Regional Center",
-        "address_line": "1575 S River Rd",
-        "city_state_zip": "St. George, UT 84790",
-        "services": ["Individual Tax", "Local Business Payroll", "Quarterly Filings"],
-        "is_hq": False
-    },
-
-    # 14. Florida (Existing from directory)
-    {
-        "region": "fl",
-        "state_name": "Florida",
-        "city": "Tampa",
-        "title": "Tampa Gulf Coast Office",
-        "subtitle": "Tampa Bay & Florida Gulf Coast",
-        "address_line": "5000 Culbreath Key Way #9-323",
-        "city_state_zip": "Tampa, FL 33611",
-        "services": ["Florida Entity Filings", "Payroll Management", "Federal Tax Planning"],
-        "is_hq": False
-    },
-
-    # 15. Puerto Rico (Existing from directory)
-    {
-        "region": "pr",
-        "state_name": "Puerto Rico",
-        "city": "San Juan",
-        "title": "San Juan Office",
-        "subtitle": "Territory Center & Regional Operations",
-        "address_line": "807 Ave. Ponce de Leon",
-        "city_state_zip": "San Juan, PR 00907",
-        "services": ["Act 60 Advisory", "Cross-Border Payroll", "Compliance Review"],
-        "is_hq": False
     }
 ]
 
@@ -528,9 +445,6 @@ REGIONS = [
     ("in", "Indiana"),
     ("sc", "South Carolina"),
     ("tn", "Tennessee"),
-    ("ut", "Utah"),
-    ("fl", "Florida"),
-    ("pr", "Puerto Rico"),
 ]
 
 def generate_card_html(loc):
@@ -815,3 +729,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
